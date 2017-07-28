@@ -1,0 +1,14 @@
+---
+layout: doc
+title: Quickstarts
+sublayout: quickstart
+index: true
+---
+
+<ul>
+{% for page in site.pages %}
+{% if page.sublayout == 'quickstart' and page.index != true %}
+  <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>

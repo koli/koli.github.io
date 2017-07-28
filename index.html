@@ -1,0 +1,14 @@
+---
+layout: doc
+title: Centro de Ajuda
+sublayout: index
+---
+
+<h3 class="page-title-small quickstart">Quick Starts</h3>
+<ul>
+{% for page in site.pages %}
+{% if page.sublayout == 'quickstart' and page.index != true %}
+  <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
