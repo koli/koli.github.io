@@ -15,7 +15,7 @@ reviewed: 2017-07-27T23:02:00-03:00
 
 ### GitHub
 
-Faça um fork do projeto de quick start <span class="tab-reference"><a href="https://github.com/kolihub/node-js-getting-started"><i class="tab-icon fa fa-code-fork"></i>node-js-getting-started</a></span>.
+Faça um fork do projeto de quick start <span class="tab-reference"><a href="https://github.com/koli/node-js-getting-started"><i class="tab-icon fa fa-code-fork"></i>node-js-getting-started</a></span>.
 
 ### Koli
 
