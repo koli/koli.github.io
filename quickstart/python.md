@@ -1,17 +1,17 @@
 ---
 layout: doc
-title: Python (5 minutos)
+title: Python (8 minutos)
 sublayout: quickstart
 reviewed: 2017-07-27T23:02:00-03:00
 ---
 
 <div class="alert alert-warning"><strong>Atenção: </strong>É necessário ter uma conta no GitHub. Se ainda não possui cadastre-se <a href="https://github.com/join">aqui</a></div>
 
-<!-- ### Video Guia
+### Video Guia
 
- <div class="article-video">
-  <iframe width="630" height="394" src="https://www.useloom.com/embed/7cbff3a762ec4bb2811fee0df6480928" frameborder="0" allowfullscreen></iframe>
-</div>  -->
+<div class="article-video">
+  <iframe width="630" height="394" src="https://www.useloom.com/embed/bd9cbb7242e846e6a9be3e1f8c10e9cf" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ### GitHub
 
