@@ -7,7 +7,7 @@ reviewed: 2017-07-27T23:02:00-03:00
 
 <div class="alert alert-warning"><strong>Atenção: </strong>É necessário ter uma conta no GitHub. Se ainda não possui cadastre-se <a href="https://github.com/join">aqui</a></div>
 
- ### Video Guia
+### Video Guia
 
 <div class="article-video">
   <iframe width="630" height="394" src="https://www.useloom.com/share/ff9dcee08c68482c867718981451dda9" frameborder="0" allowfullscreen></iframe>
