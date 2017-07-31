@@ -10,7 +10,7 @@ reviewed: 2017-07-27T23:02:00-03:00
 ### Video Guia
 
 <div class="article-video">
-  <iframe width="630" height="394" src="https://www.useloom.com/share/ff9dcee08c68482c867718981451dda9" frameborder="0" allowfullscreen></iframe>
+  <iframe width="630" height="394" src="https://www.useloom.com/embed/ff9dcee08c68482c867718981451dda9" frameborder="0" allowfullscreen></iframe>
 </div>   
 
 ### GitHub
