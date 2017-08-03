@@ -5,22 +5,22 @@ sublayout: concepts
 reviewed: 2017-08-01T16:00:00-03:00
 ---
 
-[Pods]({{ site.baseurl }}/concepts/pods.html) são entidades mortais. Eles nascem e quando morrem eles não ressuscitam. [Replication Controllers](#TODO) em particular, criam e destroem ___Pods___ dinâmicamente(Ex.: Escalando e Desescalando applicações ou durante um [Rolling Update](#TODO)). Enquanto cada ___Pod___ recebe seu próprio endereço de IP, esses não podem ser confiáveis, uma vez que não podemos garantir que permanecerão com o mesmo IP com o passar do tempo. Isso traz um problema, imagine a seguinte situação: Um primeiro conjunto de ___Pods___ (Backends) provê uma API para um segundo conjunto de ___Pods___(Frontends) como esses frontends vão descobrir e encontrar quais são os ___Pods___ de backend de uma maneira dinâmica?
+[Pods]({{ site.baseurl }}/concepts/pods.html) são entidades mortais. Eles nascem e quando morrem eles não ressuscitam. [ReplicaSets](#TODO) em particular, criam e destroem `Pods` dinâmicamente(Ex.: Escalando e Desescalando applicações ou durante um [Rolling Update](#TODO)). Enquanto cada `Pod` recebe seu próprio endereço de IP, esses não podem ser confiáveis, uma vez que não podemos garantir que permanecerão com o mesmo IP com o passar do tempo. Isso traz um problema, imagine a seguinte situação: Um primeiro conjunto de `Pods` (Backends) provê uma API para um segundo conjunto de `Pods`(Frontends) como esses frontends vão descobrir e encontrar quais são os `Pods` de backend de uma maneira dinâmica?
 
 * TOC
 {:toc}
 
 ### O que é Service?
-___Service___ é uma abstração que define lógicamente um conjunto de ___Pods___ e uma politica de roteamento associada. O conjunto de ___Pods___ alvo de um ___Service___ é (geralmente) determinado por um [Label Selector](#TODO).
+`Service` é uma abstração que define lógicamente um conjunto de `Pods` e uma politica de roteamento associada. O conjunto de `Pods` alvo de um `Service` é (geralmente) determinado por um [Label Selector](#TODO).
 
 <div class="alert alert-info">
-  <strong>Info:</strong> Todas aplicações e banco de dados na Plataforma Koli sobem automaticamente com um <strong>Service</strong> configurados.
+  <strong>Nota:</strong> Todas aplicações e banco de dados na Plataforma Koli sobem automaticamente com um <strong>Service</strong> configurados.
 </div> 
 
 ![Services overview diagram for iptables proxy](services-iptables-overview.svg)
 
 ### O que é Ingress?
-Tipicamente, ___Services___ e ___Pods___ possuem IPs roteáveis pela rede local. Todo tráfego que acaba no roteador de borda é descardado. Conceitualmente isso é como a figura abaixo:
+Tipicamente, `Services` e `Pods` possuem IPs roteáveis pela rede local. Todo tráfego que acaba no roteador de borda é descardado. Conceitualmente isso é como a figura abaixo:
 
 
 ```
@@ -30,7 +30,7 @@ Tipicamente, ___Services___ e ___Pods___ possuem IPs roteáveis pela rede local.
   [ Services ]
 ```
 
-Um ingress é um conjunto de regras que permitem conexões oriundas da internet acessarem os serviço internos (___Services___).
+Um ingress é um conjunto de regras que permitem conexões oriundas da internet acessarem os serviço internos (`Services`).
 
 ```
     internet
@@ -40,8 +40,8 @@ Um ingress é um conjunto de regras que permitem conexões oriundas da internet 
    [ Services ]
 ```
 
-Pode ser configurado para fornecer aos ___Services___ URLs acessíveis externamente.
+Pode ser configurado para fornecer aos `Services` URLs acessíveis externamente.
 
 <div class="alert alert-info">
-  <strong>Info:</strong> Todas aplicações na Plataforma Koli sobem automaticamente com um <strong>Ingress</strong> configurado.
+  <strong>Nota:</strong> Todas aplicações na Plataforma Koli sobem automaticamente com um <strong>Ingress</strong> configurado.
 </div> 
