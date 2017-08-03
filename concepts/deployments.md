@@ -10,7 +10,7 @@ reviewed: 2017-08-03T19:00:00-03:00
 
 ### O que é um Deployment?
 
-Um `Deployment` fornece atualizações declarativas para [Pods]({{ site.baseurl }}/concepts/pods.html) e [ReplicaSets]().
+Um `Deployment` fornece atualizações declarativas para [Pods]({{ site.baseurl }}/concepts/pods.html) e [ReplicaSets]({{ site.baseurl }}/concepts/replicasets.html).
 
 Voce descreve o estado desejado em um Deployment e o `Deployment Controller` altera o estado atual para o desejado em um rítimo controlado.
 
