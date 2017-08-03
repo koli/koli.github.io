@@ -2,7 +2,7 @@
 ---
 [
   {% for page in site.pages %}
-    {% if page.sublayout == "issue" or page.sublayout == "guide" %}
+    {% if page.sublayout == "quickstart" or page.sublayout == "concepts" %}
     {
       "title"    : "{{ page.title | escape }}",
       "sublayout" : "{{ page.sublayout }}",
