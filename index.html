@@ -12,3 +12,12 @@ sublayout: index
 {% endif %}
 {% endfor %}
 </ul>
+
+<h3 class="page-title-small quickstart">Conceitos</h3>
+<ul>
+{% for page in site.pages %}
+{% if page.sublayout == 'concepts' and page.index != true %}
+  <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>

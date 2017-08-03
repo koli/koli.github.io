@@ -1,0 +1,14 @@
+---
+layout: doc
+title: Conceitos
+sublayout: concepts
+index: true
+---
+
+<ul>
+{% for page in site.pages %}
+{% if page.sublayout == 'concepts' and page.index != true %}
+  <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
