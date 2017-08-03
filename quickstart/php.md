@@ -14,7 +14,7 @@ reviewed: 2017-07-27T23:02:00-03:00
 ### Video Guia
 
 <div class="article-video">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/z3k4cO8--D0?ecver=1" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ER-YznOeJXs" frameborder="0" allowfullscreen></iframe>
 </div>  
 
 ### Fork no GitHub
