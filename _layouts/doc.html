@@ -1,3 +1,7 @@
+<!-- Logic for 'edit this button' -->
+{% assign edit_url = "https://github.com/koli/koli.github.io/edit/master/" | append: page.path %} {% for entry in site.data.not_edited_here.overrides %} {% if page.url contains entry.path %} {% if entry.source %}{% assign edit_url = entry.source %}{%
+else %}{% assign edit_url = "" %}{% endif %} {% break %} {% endif %} {% endfor %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +16,7 @@
 
   <link href="https://coreos.com/assets/css/pygments-manni.css" rel="stylesheet">
 
-  <link href="https://coreos.com/assets/css/coreos.css" rel="stylesheet">
-
+  <link href="/stylesheets/koli.css" rel="stylesheet">
   <link href="https://coreos.com/assets/css/syntax-highlight.css" rel="stylesheet">
 
   <link href="/stylesheets/docs.css" rel="stylesheet">
@@ -79,6 +82,14 @@
             {{ content }}
             {% if page.noratings != true %}
 						  <div style="color:#b9c2cc; text-align: center; margin-top: 150px">
+              <div >
+                {% if edit_url != "" %}
+                  <a class="btn btn-primary" href="{{ edit_url }}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this page  </a>
+                {% endif %}
+
+                <a class="btn btn-secondary"  href="https://github.com/koli/koli.github.io/issues/new?assignee={% if page.assignee %}{{ page.assignee }}{% else %}{{ page.defaultassignee }}{% endif %}&body=File: [{{ page.path }}](https://koli.me{{ page.url }})}"
+                  class="nomunge"><i class="fa fa-check" aria-hidden="true"></i> Request changes</a> 
+              </div>
 								<div id="pd_rating_holder_8554542"></div>
 								<script type="text/javascript">
 								PDRTJS_settings_8554542 = {
