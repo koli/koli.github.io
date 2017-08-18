@@ -217,7 +217,7 @@ $ kubectl -n prod-acme-koli exec -it koli-portal-1686868207-n5b3x /bin/bash
 slug@koli-portal-1686868207-n5b3x:~$
 ```
 
-No exemplo acima estamos executando(exec) o comando `/bin/bash` de forma iterativa no `Pod` ___koli-portal-1686868207-n5b3x___  no `Namespace` ___prod-acme-koli___. Dessa forma voce poderá executar comandos dentro do `Pod`.
+No exemplo acima estamos executando(exec) o comando ___/bin/bash___ de forma iterativa no `Pod` ___koli-portal-1686868207-n5b3x___  no `Namespace` ___prod-acme-koli___. Dessa forma voce poderá executar comandos dentro do `Pod`.
 
 <div class="alert alert-warning">
   <strong>Atenção:</strong> Lembre-se que os Pods são efêmeros. As alterações que realizar em um container <strong>NÃO</strong> serão persistidas. Em eventual scale in ou scale down ou restart elas serão perdidas.
@@ -225,7 +225,7 @@ No exemplo acima estamos executando(exec) o comando `/bin/bash` de forma iterati
 
 #### Port-Forward
 
-Voce pode mapear portas de um container na sua máquina local. Para isso utilize o comando `port-forward`. No exemplo abaixo estamos mapeando a porta ___3306___ do `Pod` ___mariadb-1718711613-pgg9x___  no `Namespace` ___prod-acme-koli___.
+Voce pode mapear portas de um container na sua máquina local. Para isso utilize o comando ___port-forward___. No exemplo abaixo estamos mapeando a porta ___3306___ do `Pod` ___mariadb-1718711613-pgg9x___  no `Namespace` ___prod-acme-koli___.
 
 ``` bash
 $ kubectl -n prod-acme-koli  port-forward mariadb-1718711613-pgg9x 3306
