@@ -3,21 +3,35 @@ layout: doc
 title: Centro de Ajuda
 sublayout: index
 ---
+<div class="row">
+  <div markdown="1" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 block">
+    <h3 class="page-title-small quickstart">Quick Starts</h3>
+    <ul>
+    {% for page in site.pages %}
+    {% if page.sublayout == 'quickstart' and page.index != true %}
+      <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
 
-<h3 class="page-title-small quickstart">Quick Starts</h3>
-<ul>
-{% for page in site.pages %}
-{% if page.sublayout == 'quickstart' and page.index != true %}
-  <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-{% endif %}
-{% endfor %}
-</ul>
+    <h3 class="page-title-small guide">Guias</h3>
+    <ul>
+    {% for page in site.pages %}
+    {% if page.sublayout == 'guides' and page.index != true %}
+      <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
 
-<h3 class="page-title-small quickstart">Conceitos</h3>
-<ul>
-{% for page in site.pages %}
-{% if page.sublayout == 'concepts' and page.index != true %}
-  <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-{% endif %}
-{% endfor %}
-</ul>
+  <div markdown="1" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 block">
+    <h3 class="page-title-small concept">Conceitos</h3>
+    <ul>
+    {% for page in site.pages %}
+    {% if page.sublayout == 'concepts' and page.index != true %}
+      <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+</div>
